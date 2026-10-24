@@ -1,0 +1,10 @@
+Original project photography supplied through the user's Facebook browser session.
+No generative scene replacements are used by the production website.
+Files converted to WebP for delivery, with CSS cropping in the website.
+
+striped-awning.webp: https://web.facebook.com/photo.php?fbid=2634738073568083
+installation.webp: https://web.facebook.com/photo.php?fbid=2634737770234780
+steel-frame.webp: https://web.facebook.com/photo.php?fbid=2613078715734019
+metal-roof.webp: https://web.facebook.com/photo.php?fbid=2613078579067366
+
+The sliding-canvas service currently uses a clearly captioned team photo until a verified photo of that system is supplied. The old repository's slide-awning-demo.mp4 shows a folding-arm awning and must not be labeled as a sliding canopy.

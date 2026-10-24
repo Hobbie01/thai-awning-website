@@ -11,11 +11,11 @@ export const images = {
   installation: "/images/work/installation.webp",
   steel: "/images/work/steel-frame.webp",
   roof: "/images/work/metal-roof.webp",
-  sliding: "/images/work/sliding-canvas.webp",
+  sliding: "/images/work/installation.webp",
 };
 export const services = [
   { slug: "awning", title: "ผ้าใบกันสาด", description: "กันแดด กันฝน เพิ่มพื้นที่ใช้งาน สำหรับบ้านพักอาศัยและร้านค้า", image: images.awning, alt: "กันสาดผ้าใบลายเหลืองครีมเหนือประตูบ้านผนังหิน" },
-  { slug: "slide-awning", title: "ผ้าใบรางสไลด์", description: "เลือกเปิดรับแสงหรือปิดบังแดด ให้เหมาะกับพื้นที่และการใช้งาน", image: images.sliding, alt: "ระบบผ้าใบรางสไลด์จากงานติดตั้งจริงของช่างตู่" },
+  { slug: "slide-awning", title: "ผ้าใบรางสไลด์", description: "เลือกเปิดรับแสงหรือปิดบังแดด ให้เหมาะกับพื้นที่และการใช้งาน", image: images.sliding, alt: "ทีมช่างขณะติดตั้งผ้าใบกันสาด" },
   { slug: "steel-roof", title: "โครงเหล็กและหลังคา", description: "โครงเต็นท์ หลังคาผ้าใบ และเมทัลชีท เลือกรูปแบบให้เหมาะกับหน้างาน", image: images.roof, alt: "งานติดตั้งโครงเหล็กและหลังคาโดยช่างตู่" },
 ] as const;
 
