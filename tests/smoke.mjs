@@ -23,7 +23,9 @@ for (const route of routes) {
     assert.ok(title && !/Create Next App/.test(title), "descriptive title");
     assert.ok(!titles.has(title), "unique route title"); titles.add(title);
     assert.match(body, /<meta name="description" content="[^"]{20,}"/);
-    assert.ok(body.includes(`rel="canonical" href="${canonicalBase}${route === "/" ? "/" : route}"`), "canonical production URL");
+    const canonicalHref = body.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
+    assert.ok(canonicalHref, "canonical link exists");
+    assert.equal(new URL(canonicalHref).href, new URL(route, canonicalBase).href, "canonical production URL");
     assert.match(body, /property="og:image"/);
     assert.ok(!/<meta name="robots" content="[^"]*noindex/.test(body));
     const schemas = [...body.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map((match) => JSON.parse(match[1]));
