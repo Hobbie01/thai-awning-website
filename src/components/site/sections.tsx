@@ -1,8 +1,8 @@
-import type { ReactNode } from "react";
+import { services, site } from "@/lib/site";
+import { ArrowRight, ChevronDown, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronDown, MessageCircle, Phone } from "lucide-react";
-import { site, services } from "@/lib/site";
+import type { ReactNode } from "react";
 type Crumb = { label: string; href?: string };
 export function ButtonLink({
   href,
@@ -78,6 +78,7 @@ export function PageHero({
   breadcrumbs,
   eyebrow,
   imagePosition = "center",
+  primaryHref = "/contact",
 }: {
   title: ReactNode;
   description: string;
@@ -86,6 +87,7 @@ export function PageHero({
   breadcrumbs?: Crumb[];
   eyebrow?: string;
   imagePosition?: string;
+  primaryHref?: string;
 }) {
   return (
     <section className="page-hero">
@@ -96,7 +98,7 @@ export function PageHero({
           <h1>{title}</h1>
           <p className="section-lead">{description}</p>
           <div className="button-row">
-            <ButtonLink href="/contact">
+            <ButtonLink href={primaryHref}>
               ปรึกษางานติดตั้ง <ArrowRight size={19} aria-hidden="true" />
             </ButtonLink>
             <ButtonLink href={site.line} variant="outline" external>

@@ -72,6 +72,7 @@ export default function ContactPage() {
         ]}
       />
       <PageHero
+        primaryHref="#channels"
         title="ปรึกษางานติดตั้ง ผ้าใบกันสาดและหลังคา"
         description="ส่งรูปพื้นที่และเล่าการใช้งานที่ต้องการ เพื่อพูดคุยรูปแบบงานกับช่างตู่ เลือกช่องทางที่สะดวก แล้วเริ่มจากรายละเอียดพื้นที่ของคุณ"
         image={images.awning}
