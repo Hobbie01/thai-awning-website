@@ -11,3 +11,5 @@ The sliding-canvas service currently uses a clearly captioned team photo until a
 
 striped-awning.webp (closer view): https://web.facebook.com/photo.php?fbid=2634738010234756
 striped-awning-wide.webp retains the first source view.
+
+roof-home.webp: original project repository public/images/home.jpg (steel-framed translucent roof; no location claim).
