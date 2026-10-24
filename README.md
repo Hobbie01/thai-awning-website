@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ผ้าใบกันสาดช่างตู่
 
-## Getting Started
+เว็บไซต์บริการติดตั้งผ้าใบกันสาด ผ้าใบรางสไลด์ และโครงหลังคา ใช้ Next.js App Router พร้อมภาพผลงานจริงจาก Facebook ของช่างตู่
 
-First, run the development server:
+## Run locally
 
-```bash
+Use Node.js 20.9+ and npm.
+
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. For production verification:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run check
+npm run build
+npm start
+npm run test:smoke
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`lint` is a read-only Biome lint check; `typecheck` runs TypeScript. The smoke script requires a running server and verifies the eight public routes, HTML metadata, canonical URLs, structured data, sitemap, robots, 404 responses, the legacy redirect and a real optimized image. To test another server, set `SMOKE_BASE_URL` to its origin.
 
-## Learn More
+## Canonical production domain
 
-To learn more about Next.js, take a look at the following resources:
+The default is `https://thai-awning-website.vercel.app`. Set `NEXT_PUBLIC_SITE_URL` **before building** when deploying to a different domain. It must be an HTTPS origin, without credentials, path, query or fragment. This controls metadata, structured data, sitemap and robots. Use the same environment variable when running smoke checks against that build.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```powershell
+$env:NEXT_PUBLIC_SITE_URL = 'https://your-domain.example'
+npm run build
+$env:SMOKE_BASE_URL = 'http://localhost:3000'
+npm run test:smoke
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Approved public routes: `/`, `/services/awning`, `/services/slide-awning`, `/services/steel-roof`, `/projects`, `/projects/striped-awning-suan-phueng`, `/about`, `/contact`. The old `/services/tent-and-awning-roof` redirects with HTTP 301 to `/services/steel-roof`.
 
-## Deploy on Vercel
+## Content and assets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Business contact values and image mappings live in `src/lib/site.ts`. Preserve verified work details when changing copy: only the Suan Phueng project currently has a confirmed location. Avoid unverified prices, reviews, addresses, service-radius or guarantees. The Organization JSON-LD deliberately omits these claims.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Local images live in `public/images/work`; Next Image serves optimized variants without allowing arbitrary remote sources. Local IBM Plex Sans Thai fonts (Thai subset, weights 400/500/600/700) are supplied by [Fontsource](https://fontsource.org/fonts/ibm-plex-sans-thai), under the bundled [SIL Open Font License](public/fonts/OFL.txt). Latin characters use the interface's system fallback font.
+
+Framework is pinned to Next 15.5.28 following the [official October 14, 2026 security update](https://nextjs.org/blog/nextjs-security-update-october-14-2026). Review dependency advisories when upgrading and repeat production smoke checks.
+`postcss` and `postcss-selector-parser` overrides keep transitive CSS tooling on patched releases while retaining Tailwind 3; verify CSS output when changing these overrides.
