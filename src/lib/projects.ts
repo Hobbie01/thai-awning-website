@@ -40,7 +40,11 @@ export const projects: Project[] = [
         "caption": "ภาพรวมกันสาดสองจุดบริเวณประตูทางเข้าบ้าน"
       }
     ],
-    "sourceUrl": "https://web.facebook.com/photo.php?fbid=2634738073568083"
+    "sourceUrl": "https://web.facebook.com/photo.php?fbid=2634738073568083",
+    "coverImage": {
+      "src": "/images/enhanced/striped-awning-suan-phueng.webp",
+      "alt": "ภาพปรับด้วย AI ของกันสาดผ้าใบลายเหลืองครีมบนบ้านผนังหิน"
+    }
   },
   {
     "slug": "steel-roof-ban-pong",
@@ -89,7 +93,11 @@ export const projects: Project[] = [
         "alt": "กันสาดผ้าใบสีอ่อนด้านหน้าร้านอาหาร",
         "caption": "แนวกันสาดด้านหน้าร้านอาหาร"
       }
-    ]
+    ],
+    "coverImage": {
+      "src": "/images/enhanced/restaurant-front-awning.webp",
+      "alt": "ภาพปรับด้วย AI ของผ้าใบกันสาดสีอ่อนหน้าร้านอาหาร"
+    }
   },
   {
     "slug": "yellow-shop-roof",
@@ -133,7 +141,11 @@ export const projects: Project[] = [
         "caption": "มุมมองโครงเหล็ก เสารับ และด้านใต้หลังคาหน้าร้าน"
       }
     ],
-    "sourceUrl": "https://web.facebook.com/photo.php?fbid=2623644334677457"
+    "sourceUrl": "https://web.facebook.com/photo.php?fbid=2623644334677457",
+    "coverImage": {
+      "src": "/images/enhanced/shop-steel-roof-ban-pong.webp",
+      "alt": "ภาพปรับด้วย AI ของโครงหลังคาสีเข้มหน้าอาคารร้านค้า บ้านโป่ง"
+    }
   },
   {
     "slug": "navy-striped-awning-suan-phueng",
@@ -149,7 +161,11 @@ export const projects: Project[] = [
         "caption": "กันสาดทรงโค้งและชายผ้าบริเวณช่องเปิดของอาคาร"
       }
     ],
-    "sourceUrl": "https://web.facebook.com/photo/?fbid=2634737616901462"
+    "sourceUrl": "https://web.facebook.com/photo/?fbid=2634737616901462",
+    "coverImage": {
+      "src": "/images/enhanced/navy-striped-awning-suan-phueng.webp",
+      "alt": "ภาพปรับด้วย AI ของกันสาดผ้าใบสีน้ำเงินบนผนังไม้สีขาว สวนผึ้ง"
+    }
   },
   {
     "slug": "brown-metal-sheet-roof",
@@ -190,6 +206,107 @@ export const projects: Project[] = [
       }
     ],
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=870830539137856"
+  },
+  {
+    "slug": "blue-gable-metal-roof",
+    "title": "หลังคาเมทัลชีทจั่วสีน้ำเงิน",
+    "category": "roof",
+    "description": "งานหลังคาทรงจั่วมุงแผ่นเมทัลชีทสีน้ำเงินบริเวณหน้าอาคาร มีภาพด้านหน้า มุมเฉียง และภาพทีมช่างระหว่างติดตั้งให้เห็นรูปทรงและรายละเอียดของหน้างานเดียวกัน",
+    "serviceSlug": "steel-roof",
+    "images": [
+      {
+        "src": "/images/work/blue-gable-metal-roof-front.webp",
+        "alt": "ภาพด้านหน้าหลังคาทรงจั่วเมทัลชีทสีน้ำเงินบริเวณหน้าอาคาร",
+        "caption": "ภาพต้นฉบับด้านหน้าเห็นรูปทรงจั่วและแนวหลังคา"
+      },
+      {
+        "src": "/images/work/blue-gable-metal-roof-angle.webp",
+        "alt": "ภาพมุมเฉียงของหลังคาเมทัลชีทจั่วสีน้ำเงินงานเดียวกัน",
+        "caption": "มุมเฉียงแสดงแนวหลังคาและความสัมพันธ์กับตัวอาคาร"
+      },
+      {
+        "src": "/images/work/blue-gable-metal-roof-installation.webp",
+        "alt": "ช่างกำลังทำงานบนหลังคาเมทัลชีทสีน้ำเงินระหว่างติดตั้ง",
+        "caption": "ภาพระหว่างดำเนินงานบนหลังคา"
+      }
+    ],
+    "sourceUrl": "https://web.facebook.com/photo.php?fbid=953667394187503",
+    "coverImage": {
+      "src": "/images/enhanced/blue-gable-metal-roof.webp",
+      "alt": "ภาพปรับด้วย AI ของหลังคาเมทัลชีทจั่วสีน้ำเงินบริเวณหน้าอาคาร"
+    }
+  },
+  {
+    "slug": "white-steel-porch-roof",
+    "title": "หลังคาระเบียงโครงเหล็กสีขาว",
+    "category": "roof",
+    "description": "หลังคาระเบียงข้างบ้านโทนสีส้มรองรับด้วยเสาและโครงเหล็กสีขาว มีภาพสองทิศทางของหน้างานเดียวกันให้เห็นแนวหลังคาตลอดพื้นที่ระเบียง",
+    "serviceSlug": "steel-roof",
+    "images": [
+      {
+        "src": "/images/work/white-porch-roof.webp",
+        "alt": "แนวหลังคาระเบียงโครงเหล็กสีขาวข้างบ้านผนังสีส้ม",
+        "caption": "ภาพต้นฉบับมองตามแนวโครงหลังคาและระเบียง"
+      },
+      {
+        "src": "/images/work/white-porch-roof-reverse.webp",
+        "alt": "มุมย้อนกลับของระเบียงบ้านสีส้มที่มีหลังคาและเสาสีขาว",
+        "caption": "อีกทิศทางของหลังคาระเบียงงานเดียวกัน"
+      }
+    ],
+    "sourceUrl": "https://web.facebook.com/photo.php?fbid=1081602391394002",
+    "coverImage": {
+      "src": "/images/enhanced/white-steel-porch-roof.webp",
+      "alt": "ภาพปรับด้วย AI ของหลังคาระเบียงโครงเหล็กสีขาวข้างบ้านสีส้ม"
+    }
+  },
+  {
+    "slug": "green-house-front-canopy",
+    "title": "โครงหลังคาสีเข้มหน้าบ้านโทนเขียว",
+    "category": "roof",
+    "description": "งานโครงหลังคาสีเข้มบริเวณหน้าบ้านโทนเขียวที่มีประตูสีขาวทรงโค้ง มีภาพทีมช่างขณะติดตั้งโครงและภาพหลังติดตั้งช่วงกลางคืนของหน้างานเดียวกัน",
+    "serviceSlug": "steel-roof",
+    "images": [
+      {
+        "src": "/images/work/green-house-front-canopy.webp",
+        "alt": "ภาพกลางคืนของหลังคาโครงสีเข้มหน้าบ้านโทนเขียวพร้อมประตูโค้งสีขาว",
+        "caption": "ภาพต้นฉบับหลังติดตั้งถ่ายในช่วงกลางคืน"
+      },
+      {
+        "src": "/images/work/green-house-front-canopy-installation.webp",
+        "alt": "ช่างสองคนกำลังติดตั้งโครงหลังคาบริเวณหน้าบ้านโทนเขียว",
+        "caption": "ภาพระหว่างติดตั้งโครงของหน้างานเดียวกัน"
+      }
+    ],
+    "sourceUrl": "https://web.facebook.com/photo.php?fbid=870835092470734",
+    "coverImage": {
+      "src": "/images/enhanced/green-house-front-canopy.webp",
+      "alt": "ภาพปรับด้วย AI ของโครงหลังคาสีเข้มหน้าบ้านโทนเขียวในช่วงกลางคืน"
+    }
+  },
+  {
+    "slug": "steel-frame-in-progress",
+    "title": "งานขึ้นโครงเหล็กก่อนมุงหลังคา",
+    "category": "roof",
+    "description": "ภาพระหว่างขึ้นโครงเหล็กสีเข้มก่อนมุงหลังคา เห็นแนวคานและโครงด้านบน รวมถึงภาพทีมช่างกับบันไดขณะทำงาน งานในภาพยังอยู่ระหว่างดำเนินการ",
+    "serviceSlug": "steel-roof",
+    "images": [
+      {
+        "src": "/images/work/steel-frame-in-progress-workers.webp",
+        "alt": "ทีมช่างและบันไดระหว่างขึ้นโครงเหล็กก่อนมุงหลังคา",
+        "caption": "ภาพต้นฉบับทีมช่างระหว่างดำเนินงาน"
+      },
+      {
+        "src": "/images/work/steel-frame-in-progress-upper.webp",
+        "alt": "แนวโครงเหล็กด้านบนเหนือผนังสีขาวที่ยังไม่ได้มุงหลังคา",
+        "caption": "รายละเอียดโครงด้านบนก่อนมุงหลังคา"
+      }
+    ],
+    "sourceUrl": "https://web.facebook.com/photo.php?fbid=1111075798446661",
+    "coverImage": {
+      "src": "/images/enhanced/steel-frame-in-progress.webp",
+      "alt": "ภาพปรับด้วย AI ของโครงเหล็กที่ยังอยู่ระหว่างติดตั้งก่อนมุงหลังคา"
+    }
   }
 ];
 

@@ -33,12 +33,14 @@ export function WorkPhoto({
   className = "",
   priority = false,
   position = "center",
+  sizes = "(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 640px",
 }: {
   src: string;
   alt: string;
   className?: string;
   priority?: boolean;
   position?: string;
+  sizes?: string;
 }) {
   return (
     <div className={`photo-frame ${className}`}>
@@ -47,7 +49,7 @@ export function WorkPhoto({
         alt={alt}
         fill
         priority={priority}
-        sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 640px"
+        sizes={sizes}
         style={{ objectPosition: position }}
       />
     </div>

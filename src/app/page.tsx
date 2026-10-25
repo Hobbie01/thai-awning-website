@@ -14,9 +14,9 @@ import ProjectCover from "@/components/project-cover";
 import CustomerReviews from "@/components/site/reviews";
 
 const moreProjects = [
-  "navy-striped-awning-suan-phueng",
-  "shop-steel-roof-ban-pong",
-  "cream-retractable-awning",
+  "white-steel-porch-roof",
+  "blue-gable-metal-roof",
+  "green-house-front-canopy",
 ].flatMap((slug) => projects.filter((project) => project.slug === slug));
 const featuredProject =
   projects.find((project) => project.slug === "striped-awning-suan-phueng") ??
@@ -183,11 +183,6 @@ export default function Home() {
                 <ProjectCover
                   project={project}
                   href={`/projects/${project.slug}`}
-                  position={
-                    project.slug === "navy-striped-awning-suan-phueng"
-                      ? "center 25%"
-                      : "center"
-                  }
                 />
                 <div className="card-body">
                   <h3>

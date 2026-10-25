@@ -1,0 +1,46 @@
+AI-adjusted presentation covers, generated from verified photographs at the user's request.
+These are not original documentary photographs. The website labels each cover "ภาพปรับด้วย AI" and provides a link to the original photos in the corresponding case gallery.
+All generated outputs were visually reviewed before acceptance and encoded to WebP quality 90. Original gallery photographs are kept separately in /images/work without generative edits.
+
+Generated output directory: C:/Users/tppho/.codex/generated_images/01a16c3e-c622-7391-be6e-ec2149b4867b/
+
+striped-awning-suan-phueng.webp
+Source photograph: /images/work/striped-awning-wide.webp
+Generated output: exec-bf5075c0-dde9-40bc-a571-5ff2f8ac3b4b.png
+Requested adjustments: remove ladder, bucket, broom, bag and loose tools; improve exposure.
+
+restaurant-front-awning.webp
+Source photograph: /images/work/restaurant-awning.webp
+Generated output: exec-46c85b74-9fff-47ab-9cf6-1f164423737d.png
+Requested adjustments: remove scooter and stray wires; improve exposure.
+
+shop-steel-roof-ban-pong.webp
+Source photograph: /images/work/shop-steel-roof-ban-pong.webp
+Generated output: exec-2abbd656-e230-4245-87c3-0b455fc061c1.png
+Requested adjustments: remove three people, tools and loose material stacks.
+
+navy-striped-awning-suan-phueng.webp
+Source photograph: /images/work/navy-striped-awning-suan-phueng.webp
+Generated output: exec-671f3173-09de-4057-9e77-ba9b7bde328f.png
+Requested adjustments: remove scaffolding and cardboard; improve exposure.
+
+blue-gable-metal-roof.webp
+Source photograph: /images/work/blue-gable-metal-roof-front.webp
+Generated output: exec-0b268fa7-bfd6-4bdc-b981-4bef1e433b15.png
+Requested adjustments: remove overhead wires and antenna, crop truck and improve exposure; preserve the existing facade and installed roof.
+
+
+white-steel-porch-roof.webp
+Source photograph: /images/work/white-porch-roof.webp
+Generated output: exec-99a4c518-5362-4727-a38a-82245f759a2f.png
+Requested adjustments: correct white balance and remove loose slippers/debris; preserve the air conditioner and installed structure. No exact roofing material is asserted.
+
+green-house-front-canopy.webp
+Source photograph: /images/work/green-house-front-canopy.webp
+Generated output: exec-6ebed73a-2209-4097-8f05-169ef42ce0e3.png
+Requested adjustments: reduce night noise, correct exposure and remove temporary scaffolding/loose objects; preserve the installed roof and house details.
+
+steel-frame-in-progress.webp
+Source photograph: /images/work/steel-frame-in-progress-upper.webp
+Generated output: exec-22d4283b-c16f-4fea-8da5-2d4353c3b8a9.png
+Requested adjustments: remove blue pipe, coiled cable, loose tools and person behind the gate; improve clarity. Preserve the unroofed construction state; do not portray a finished roof.

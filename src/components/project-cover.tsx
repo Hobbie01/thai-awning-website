@@ -15,6 +15,7 @@ export default function ProjectCover({
       alt={cover.alt}
       priority={priority}
       position={position}
+      sizes={priority ? "(max-width: 1200px) 100vw, 1200px" : undefined}
     />
   );
   return (
@@ -29,7 +30,10 @@ export default function ProjectCover({
       {project.coverImage ? (
         <figcaption className="project-cover-note">
           <span>ภาพปรับด้วย AI</span>
-          <Link href={`/projects/${project.slug}#original-photos`}>
+          <Link
+            href={`/projects/${project.slug}#original-photos`}
+            aria-label={`ดูภาพต้นฉบับ ${project.title}`}
+          >
             ดูภาพต้นฉบับ
           </Link>
         </figcaption>

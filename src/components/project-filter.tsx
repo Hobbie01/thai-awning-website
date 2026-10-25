@@ -35,7 +35,7 @@ export default function ProjectFilter({ projects }: { projects: Project[] }) {
       </fieldset>
       <output className="inner-filter-status" aria-live="polite">
         {visible.length
-          ? `แสดงผลงาน ${visible.length} งาน · ${visible.reduce((count, project) => count + project.images.length, 0)} ภาพ`
+          ? `แสดงผลงาน ${visible.length} งาน · ${visible.reduce((count, project) => count + project.images.length, 0)} ภาพต้นฉบับ`
           : "ยังไม่มีภาพผลงานในหมวดนี้"}
       </output>
       {visible.length ? (
