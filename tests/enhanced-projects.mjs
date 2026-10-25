@@ -15,9 +15,9 @@ for (const project of projects) {
   assert.equal((gallery.match(/class="portfolio-photo-button"/g) || []).length, project.images.length, "all originals remain in gallery");
   for (const image of project.images) assert.ok(gallery.includes(encodeURIComponent(image.src)), `original retained: ${image.src}`);
   if (project.coverImage) {
-    assert.ok(header.includes("ภาพปรับด้วย AI"), "visible AI disclosure on edited cover");
+    assert.ok(header.includes("ภาพปรับแต่ง"), "visible edited-photo label on cover");
     assert.ok(header.includes(`href="/projects/${project.slug}#original-photos"`), "cover links to original comparison");
     assert.ok(!gallery.includes(encodeURIComponent(project.coverImage.src)), "original gallery contains no generated cover");
-  } else assert.ok(!header.includes("ภาพปรับด้วย AI"), "original photo is not mislabeled");
+  } else assert.ok(!header.includes("ภาพปรับแต่ง"), "original photo is not mislabeled");
 }
-console.log(`PASS ${projects.length} case covers, matching SEO, AI disclosures and original-only galleries`);
+console.log(`PASS ${projects.length} case covers, matching SEO, edited-photo labels and original-only galleries`);
