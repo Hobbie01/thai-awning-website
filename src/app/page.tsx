@@ -10,6 +10,7 @@ import {
 import { images } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
 import { projects } from "@/lib/projects";
+import CustomerReviews from "@/components/site/reviews";
 
 const moreProjects = [
   "navy-striped-awning-suan-phueng",
@@ -254,6 +255,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <CustomerReviews />
       <Faq items={faqs} />
       <ContactCta />
     </>

@@ -1,0 +1,19 @@
+.reviews-heading-row{display:flex;align-items:center;justify-content:space-between;gap:40px;margin-bottom:28px}
+.reviews-heading-row .section-heading{max-width:680px;margin-bottom:12px}
+.reviews-source-note{color:var(--muted);font-size:.9rem;line-height:1.8}
+.reviews-summary{flex-shrink:0;min-width:205px;color:var(--navy)}
+.reviews-summary>p:first-child{line-height:1.2;margin-bottom:8px}
+.reviews-summary strong{font-size:2.8rem;font-weight:700}
+.reviews-summary>p:last-child{font-size:.875rem;line-height:1.7;margin-top:7px}
+.review-stars{display:inline-flex;align-items:center;gap:4px;color:#ae7000}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.review-card{display:flex;flex-direction:column;align-items:flex-start;margin:0;padding:28px;min-width:0;background:#fff;border:1px solid var(--line);border-radius:12px}
+.review-card blockquote{margin:18px 0 28px;line-height:1.9;color:var(--navy);font-size:1.05rem}
+.review-card figcaption{display:flex;gap:12px;align-items:center;margin-top:auto;min-width:0}
+.review-initials{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:42px;height:42px;background:var(--navy);color:var(--ivory);border-radius:50%;font-size:.875rem;font-weight:600}
+.review-card cite{display:block;font-style:normal;font-weight:600;font-size:.95rem;line-height:1.6;overflow-wrap:anywhere}
+.review-card figcaption a{display:inline-flex;align-items:center;gap:4px;font-size:.8rem;color:var(--muted);text-decoration:underline;text-underline-offset:3px;margin-top:4px}
+.review-card figcaption a:hover{color:var(--navy)}
+.reviews-all-link{margin-top:24px}
+@media(max-width:900px){.reviews-heading-row{align-items:flex-start;gap:24px}.review-card{padding:22px}.reviews-grid{gap:16px}}
+@media(max-width:700px){.reviews-heading-row{display:block}.reviews-summary{margin-top:24px}.reviews-summary strong{font-size:2.4rem}.reviews-grid{grid-template-columns:1fr;gap:18px}.review-card{padding:24px}.review-card blockquote{margin-bottom:22px}.reviews-source-note{font-size:.85rem}}
