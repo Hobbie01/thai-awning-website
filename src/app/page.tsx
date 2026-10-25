@@ -9,19 +9,23 @@ import {
 } from "@/components/site/sections";
 import { images } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
-import { projects } from "@/lib/projects";
+import { getProjectCover, projects } from "@/lib/projects";
+import ProjectCover from "@/components/project-cover";
 import CustomerReviews from "@/components/site/reviews";
 
 const moreProjects = [
-  "navy-striped-awning-suan-phueng",
-  "shop-steel-roof-ban-pong",
-  "cream-retractable-awning",
+  "white-steel-porch-roof",
+  "blue-gable-metal-roof",
+  "green-house-front-canopy",
 ].flatMap((slug) => projects.filter((project) => project.slug === slug));
+const featuredProject =
+  projects.find((project) => project.slug === "striped-awning-suan-phueng") ??
+  projects[0];
 export const metadata = pageMetadata(
   "ติดตั้งผ้าใบกันสาดและโครงหลังคา โดยช่างตู่",
   "บริการติดตั้งผ้าใบกันสาด ผ้าใบรางสไลด์ โครงเหล็กและหลังคา ดูภาพผลงานจริงและปรึกษารูปแบบที่เหมาะกับพื้นที่กับช่างตู่",
   "/",
-  images.awning,
+  getProjectCover(featuredProject).src,
 );
 const faqs = [
   {
@@ -62,9 +66,8 @@ export default function Home() {
     <>
       <section className="home-hero">
         <div className="hero-image">
-          <WorkPhoto
-            src={images.awning}
-            alt="ผลงานจริงกันสาดผ้าใบลายเหลืองครีมบนบ้านผนังหิน"
+          <ProjectCover
+            project={featuredProject}
             priority
             position="center 38%"
           />
@@ -156,11 +159,7 @@ export default function Home() {
             </Link>
           </div>
           <article className="featured-project">
-            <WorkPhoto
-              src={images.awning}
-              alt="กันสาดผ้าใบลายทางบ้านพักอาศัย สวนผึ้ง"
-              position="center 42%"
-            />
+            <ProjectCover project={featuredProject} position="center 42%" />
             <div>
               <p className="eyebrow">งานผ้าใบกันสาด · สวนผึ้ง</p>
               <h3>
@@ -181,20 +180,10 @@ export default function Home() {
           <div className="grid-three home-project-grid">
             {moreProjects.map((project) => (
               <article className="card" key={project.slug}>
-                <Link
+                <ProjectCover
+                  project={project}
                   href={`/projects/${project.slug}`}
-                  aria-label={`ดูผลงาน ${project.title}`}
-                >
-                  <WorkPhoto
-                    src={project.images[0].src}
-                    alt={project.images[0].alt}
-                    position={
-                      project.slug === "navy-striped-awning-suan-phueng"
-                        ? "center 25%"
-                        : "center"
-                    }
-                  />
-                </Link>
+                />
                 <div className="card-body">
                   <h3>
                     <Link href={`/projects/${project.slug}`}>

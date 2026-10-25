@@ -41,9 +41,11 @@ export default function ProjectsPage() {
               (count, project) => count + project.images.length,
               0,
             )}{" "}
-            ภาพ เลือกประเภทงาน แล้วเปิดดูภาพและรายละเอียดของแต่ละหน้างานได้
+            ภาพต้นฉบับ เลือกประเภทงาน แล้วเปิดดูภาพและรายละเอียดของแต่ละหน้างานได้
           </p>
-          <ProjectFilter projects={projects} />
+          <ProjectFilter
+            projects={[...projects.slice(-4), ...projects.slice(0, -4)]}
+          />
         </div>
       </section>
       <section className="section section-soft">
