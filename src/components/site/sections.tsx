@@ -32,6 +32,7 @@ export function WorkPhoto({
   alt,
   className = "",
   priority = false,
+  loading,
   position = "center",
   sizes = "(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 640px",
 }: {
@@ -39,6 +40,7 @@ export function WorkPhoto({
   alt: string;
   className?: string;
   priority?: boolean;
+  loading?: "eager" | "lazy";
   position?: string;
   sizes?: string;
 }) {
@@ -49,6 +51,7 @@ export function WorkPhoto({
         alt={alt}
         fill
         priority={priority}
+        loading={loading}
         sizes={sizes}
         style={{ objectPosition: position }}
       />

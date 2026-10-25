@@ -183,6 +183,7 @@ export default function Home() {
                 <ProjectCover
                   project={project}
                   href={`/projects/${project.slug}`}
+                  eager
                 />
                 <div className="card-body">
                   <h3>

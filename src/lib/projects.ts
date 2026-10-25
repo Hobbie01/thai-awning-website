@@ -5,7 +5,7 @@ export type Project = {
   description: string;
   location?: string;
   serviceSlug: "awning" | "slide-awning" | "steel-roof";
-  coverImage?: { src: string; alt: string };
+  coverImage?: { src: string; alt: string; position?: string };
   images: { src: string; alt: string; caption: string }[];
   sourceUrl?: string;
 };
@@ -233,6 +233,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=953667394187503",
     "coverImage": {
       "src": "/images/enhanced/blue-gable-metal-roof.webp",
+      "position": "center 25%",
       "alt": "ภาพปรับด้วย AI ของหลังคาเมทัลชีทจั่วสีน้ำเงินบริเวณหน้าอาคาร"
     }
   },
@@ -314,6 +315,6 @@ export function getProject(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);
 }
 
-export function getProjectCover(project: Project): { src: string; alt: string } {
+export function getProjectCover(project: Project): { src: string; alt: string; position?: string } {
   return project.coverImage ?? project.images[0];
 }

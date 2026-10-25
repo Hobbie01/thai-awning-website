@@ -6,15 +6,23 @@ export default function ProjectCover({
   project,
   href,
   priority = false,
-  position = "center",
-}: { project: Project; href?: string; priority?: boolean; position?: string }) {
+  eager = false,
+  position,
+}: {
+  project: Project;
+  href?: string;
+  priority?: boolean;
+  eager?: boolean;
+  position?: string;
+}) {
   const cover = getProjectCover(project);
   const photo = (
     <WorkPhoto
       src={cover.src}
       alt={cover.alt}
       priority={priority}
-      position={position}
+      loading={eager ? "eager" : undefined}
+      position={position ?? cover.position ?? "center"}
       sizes={priority ? "(max-width: 1200px) 100vw, 1200px" : undefined}
     />
   );

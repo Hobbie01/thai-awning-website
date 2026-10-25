@@ -48,6 +48,7 @@ export default function ProjectFilter({ projects }: { projects: Project[] }) {
               <ProjectCover
                 project={project}
                 href={`/projects/${project.slug}`}
+                eager
               />
               <div className="card-body">
                 <div className="portfolio-card-meta">
