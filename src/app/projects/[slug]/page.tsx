@@ -107,7 +107,7 @@ export default async function ProjectPage({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  ดูภาพต้นฉบับบน Facebook{" "}
+                  ดูเพิ่มเติมบน Facebook{" "}
                   <ArrowUpRight size={18} aria-hidden="true" />
                 </a>
               ) : null}
@@ -132,7 +132,7 @@ export default async function ProjectPage({
         </section>
         <section id="original-photos" className="section section-soft">
           <div className="container">
-            <h2 className="section-heading">ภาพต้นฉบับจากหน้างาน</h2>
+            <h2 className="section-heading">ภาพผลงาน</h2>
             <p className="section-lead portfolio-intro">
               กดที่ภาพเพื่อดูขนาดเต็ม ใช้ปุ่มลูกศรเพื่อดูภาพถัดไป และกด Esc เพื่อปิด
             </p>

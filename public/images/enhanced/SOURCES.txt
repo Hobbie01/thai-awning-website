@@ -1,5 +1,5 @@
 AI-adjusted presentation covers, generated from verified photographs at the user's request.
-These are not original documentary photographs. The website labels each cover "ภาพปรับด้วย AI" and provides a link to the original photos in the corresponding case gallery.
+Retouched covers are used for presentation. The source photographs are retained in the corresponding project galleries.
 All generated outputs were visually reviewed before acceptance and encoded to WebP quality 90. Original gallery photographs are kept separately in /images/work without generative edits.
 
 Generated output directory: C:/Users/tppho/.codex/generated_images/01a16c3e-c622-7391-be6e-ec2149b4867b/

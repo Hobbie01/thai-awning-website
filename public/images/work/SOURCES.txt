@@ -1,5 +1,5 @@
 Original project photography supplied through the user's Facebook browser session.
-The original photographs in this directory and in each case gallery have no generative edits. AI-adjusted presentation covers are stored separately in /images/enhanced, visibly labeled, and linked to these originals; see /images/enhanced/SOURCES.txt.
+The original photographs in this directory and in each case gallery have no generative edits. AI-adjusted presentation covers are stored separately in /images/enhanced; the source photographs remain in the project galleries. See /images/enhanced/SOURCES.txt.
 Files converted to WebP for delivery, with CSS cropping in the website.
 
 striped-awning.webp: https://web.facebook.com/photo.php?fbid=2634738073568083

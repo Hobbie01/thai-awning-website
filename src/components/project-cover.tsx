@@ -35,17 +35,6 @@ export default function ProjectCover({
       ) : (
         photo
       )}
-      {project.coverImage ? (
-        <figcaption className="project-cover-note">
-          <span>ภาพปรับแต่ง</span>
-          <Link
-            href={`/projects/${project.slug}#original-photos`}
-            aria-label={`ดูภาพต้นฉบับ ${project.title}`}
-          >
-            ดูภาพต้นฉบับ
-          </Link>
-        </figcaption>
-      ) : null}
     </figure>
   );
 }

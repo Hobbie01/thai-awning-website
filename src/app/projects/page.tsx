@@ -12,7 +12,7 @@ import { ArrowUpRight } from "lucide-react";
 import "../inner-pages.css";
 export const metadata = pageMetadata(
   "ผลงานติดตั้งผ้าใบกันสาดและหลังคา",
-  "รวมภาพผลงานจริงของช่างตู่ ทั้งผ้าใบกันสาด โครงเหล็ก และหลังคา เลือกดูตามประเภทงาน พร้อมภาพหลายมุม รายละเอียดแต่ละหน้างาน และภาพต้นฉบับบน Facebook",
+  "รวมภาพผลงานจริงของช่างตู่ ทั้งผ้าใบกันสาด โครงเหล็ก และหลังคา เลือกดูตามประเภทงาน พร้อมภาพหลายมุม รายละเอียดแต่ละหน้างาน และผลงานเพิ่มเติมบน Facebook",
   "/projects",
   images.awning,
 );
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
               (count, project) => count + project.images.length,
               0,
             )}{" "}
-            ภาพต้นฉบับ เลือกประเภทงาน แล้วเปิดดูภาพและรายละเอียดของแต่ละหน้างานได้
+            ภาพ เลือกประเภทงาน แล้วเปิดดูภาพและรายละเอียดของแต่ละหน้างานได้
           </p>
           <ProjectFilter
             projects={[...projects.slice(-4), ...projects.slice(0, -4)]}
