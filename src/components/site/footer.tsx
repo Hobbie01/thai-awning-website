@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, MessageCircle, Phone } from "lucide-react";
+import { Facebook, MapPin, MessageCircle, Phone } from "lucide-react";
 import { site, services } from "@/lib/site";
 import { Brand } from "./brand";
 export function Footer() {
@@ -13,6 +13,13 @@ export function Footer() {
             <br />
             สำหรับบ้าน ร้านค้า และพื้นที่ใช้งานภายนอก
           </p>
+          <address style={{ fontStyle: "normal", fontSize: 14, marginTop: 16 }}>
+            {site.location.address}
+          </address>
+          <a href={site.location.mapUrl} target="_blank" rel="noopener noreferrer">
+            <MapPin size={17} aria-hidden="true" />
+            ดูที่ตั้งบน Google Maps
+          </a>
         </div>
         <div>
           <h2>บริการของเรา</h2>

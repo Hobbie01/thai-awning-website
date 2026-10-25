@@ -17,9 +17,10 @@ import {
   Ruler,
 } from "lucide-react";
 import "../inner-pages.css";
+import { BusinessLocation } from "@/components/site/location";
 export const metadata = pageMetadata(
-  "ติดต่อช่างตู่ ปรึกษาติดตั้งผ้าใบกันสาดและหลังคา",
-  "โทร 092-412-7392 หรือส่งรูปพื้นที่ทาง LINE และ Facebook เพื่อปรึกษางานผ้าใบกันสาด ผ้าใบรางสไลด์ โครงเหล็กและหลังคา พร้อมเตรียมข้อมูลก่อนคุยงาน",
+  "ติดต่อช่างตู่ ผ้าใบกันสาด บ้านโป่ง ราชบุรี พร้อมแผนที่",
+  "ที่ตั้งผ้าใบกันสาดช่างตู่ 63 หมู่ 2 ตำบลดอนกระเบื้อง อำเภอบ้านโป่ง ราชบุรี 70110 ดูแผนที่และเส้นทาง Google Maps โทร 092-412-7392 หรือติดต่อทาง LINE เพื่อปรึกษางานติดตั้ง",
   "/contact",
   images.awning,
 );
@@ -111,6 +112,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <BusinessLocation />
       <section className="section section-soft">
         <div className="container inner-contact-prep">
           <div>
