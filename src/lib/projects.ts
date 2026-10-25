@@ -43,7 +43,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=2634738073568083",
     "coverImage": {
       "src": "/images/enhanced/striped-awning-suan-phueng.webp",
-      "alt": "ภาพปรับด้วย AI ของกันสาดผ้าใบลายเหลืองครีมบนบ้านผนังหิน"
+      "alt": "กันสาดผ้าใบลายเหลืองครีมบนบ้านผนังหิน"
     }
   },
   {
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     ],
     "coverImage": {
       "src": "/images/enhanced/restaurant-front-awning.webp",
-      "alt": "ภาพปรับด้วย AI ของผ้าใบกันสาดสีอ่อนหน้าร้านอาหาร"
+      "alt": "ผ้าใบกันสาดสีอ่อนหน้าร้านอาหาร"
     }
   },
   {
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=2623644334677457",
     "coverImage": {
       "src": "/images/enhanced/shop-steel-roof-ban-pong.webp",
-      "alt": "ภาพปรับด้วย AI ของโครงหลังคาสีเข้มหน้าอาคารร้านค้า บ้านโป่ง"
+      "alt": "โครงหลังคาสีเข้มหน้าอาคารร้านค้า บ้านโป่ง"
     }
   },
   {
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo/?fbid=2634737616901462",
     "coverImage": {
       "src": "/images/enhanced/navy-striped-awning-suan-phueng.webp",
-      "alt": "ภาพปรับด้วย AI ของกันสาดผ้าใบสีน้ำเงินบนผนังไม้สีขาว สวนผึ้ง"
+      "alt": "กันสาดผ้าใบสีน้ำเงินบนผนังไม้สีขาว สวนผึ้ง"
     }
   },
   {
@@ -234,7 +234,7 @@ export const projects: Project[] = [
     "coverImage": {
       "src": "/images/enhanced/blue-gable-metal-roof.webp",
       "position": "center 25%",
-      "alt": "ภาพปรับด้วย AI ของหลังคาเมทัลชีทจั่วสีน้ำเงินบริเวณหน้าอาคาร"
+      "alt": "หลังคาเมทัลชีทจั่วสีน้ำเงินบริเวณหน้าอาคาร"
     }
   },
   {
@@ -258,7 +258,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=1081602391394002",
     "coverImage": {
       "src": "/images/enhanced/white-steel-porch-roof.webp",
-      "alt": "ภาพปรับด้วย AI ของหลังคาระเบียงโครงเหล็กสีขาวข้างบ้านสีส้ม"
+      "alt": "หลังคาระเบียงโครงเหล็กสีขาวข้างบ้านสีส้ม"
     }
   },
   {
@@ -282,7 +282,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=870835092470734",
     "coverImage": {
       "src": "/images/enhanced/green-house-front-canopy.webp",
-      "alt": "ภาพปรับด้วย AI ของโครงหลังคาสีเข้มหน้าบ้านโทนเขียวในช่วงกลางคืน"
+      "alt": "โครงหลังคาสีเข้มหน้าบ้านโทนเขียวในช่วงกลางคืน"
     }
   },
   {
@@ -306,7 +306,7 @@ export const projects: Project[] = [
     "sourceUrl": "https://web.facebook.com/photo.php?fbid=1111075798446661",
     "coverImage": {
       "src": "/images/enhanced/steel-frame-in-progress.webp",
-      "alt": "ภาพปรับด้วย AI ของโครงเหล็กที่ยังอยู่ระหว่างติดตั้งก่อนมุงหลังคา"
+      "alt": "โครงเหล็กที่ยังอยู่ระหว่างติดตั้งก่อนมุงหลังคา"
     }
   }
 ];

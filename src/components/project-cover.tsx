@@ -37,7 +37,7 @@ export default function ProjectCover({
       )}
       {project.coverImage ? (
         <figcaption className="project-cover-note">
-          <span>ภาพปรับด้วย AI</span>
+          <span>ภาพปรับแต่ง</span>
           <Link
             href={`/projects/${project.slug}#original-photos`}
             aria-label={`ดูภาพต้นฉบับ ${project.title}`}
