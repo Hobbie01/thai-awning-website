@@ -13,3 +13,28 @@ striped-awning.webp (closer view): https://web.facebook.com/photo.php?fbid=26347
 striped-awning-wide.webp retains the first source view.
 
 roof-home.webp: original project repository public/images/home.jpg (steel-framed translucent roof; no location claim).
+
+shop-steel-roof-ban-pong.webp: https://web.facebook.com/photo.php?fbid=2623644334677457
+Original downloaded file: 591137407_2623645314677359_3862513265448191933_n.jpg
+Verified source context: shop-front steel roof, Ban Pong, Ratchaburi.
+navy-striped-awning-suan-phueng.webp: https://web.facebook.com/photo/?fbid=2634737616901462
+Original downloaded file: 600281694_2634738223568068_7579515683363140276_n.jpg
+Verified source context: navy striped hood awning on white siding, Suan Phueng, Ratchaburi.
+striped-awning-entrance.webp: https://web.facebook.com/photo/?fbid=2634737656901458
+Original downloaded file: 597940689_2634738666901357_2739976506988367959_n.jpg
+Additional angle of the existing striped-awning-suan-phueng job, not a separate project.
+These three originals were encoded to WebP at source dimensions (quality 90), without cropping, generative edits, or object removal. The website uses CSS cropping for card previews; the gallery displays the complete image.
+
+brown-metal-roof-wide.webp: https://web.facebook.com/photo.php?fbid=870835135804063
+Original downloaded file: 613199856_870835139137396_322630048831888874_n.jpg
+brown-metal-roof-detail.webp: https://web.facebook.com/photo.php?fbid=870835182470725
+Original downloaded file: 613126985_870835185804058_5081121199505096763_n.jpg
+Both photographs belong to the same brown metal-sheet roof installation, verified from the official Facebook page 100086327531403 (January 12 post). No project location is asserted because the post supplies none.
+Encoded at original dimensions to WebP quality 90 without generative edits or scene changes.
+
+white-translucent-canopy-frame.webp: https://web.facebook.com/photo.php?fbid=870830392471204
+Original downloaded file: 612785985_870830399137870_3501986722921943395_n.jpg
+white-translucent-canopy-top.webp: https://web.facebook.com/photo.php?fbid=870830539137856
+Original downloaded file: 614702199_870830542471189_7350148124701334111_n.jpg
+Both photographs belong to the same white-frame translucent canopy beside a building, verified on official Facebook page 100086327531403 (January 12 post). No exact sheet material or location is asserted. A near-duplicate third angle was omitted.
+Encoded at original dimensions to WebP quality 90 without generative edits or scene changes.
