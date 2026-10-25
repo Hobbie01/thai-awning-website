@@ -1,36 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    unoptimized: true,
-    domains: [
-      "source.unsplash.com",
-      "images.unsplash.com",
-      "ext.same-assets.com",
-      "ugc.same-assets.com",
-    ],
-    remotePatterns: [
+  outputFileTracingRoot: __dirname,
+  async redirects() {
+    return [
       {
-        protocol: "https",
-        hostname: "source.unsplash.com",
-        pathname: "/**",
+        source: "/services/tent-and-awning-roof",
+        destination: "/services/steel-roof",
+        statusCode: 301,
       },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "ext.same-assets.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "ugc.same-assets.com",
-        pathname: "/**",
-      },
-    ],
+    ];
   },
 };
-
 module.exports = nextConfig;

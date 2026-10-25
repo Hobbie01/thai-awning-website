@@ -1,0 +1,66 @@
+Original project photography supplied through the user's Facebook browser session.
+The original photographs in this directory and in each case gallery have no generative edits. AI-adjusted presentation covers are stored separately in /images/enhanced; the source photographs remain in the project galleries. See /images/enhanced/SOURCES.txt.
+Files converted to WebP for delivery, with CSS cropping in the website.
+
+striped-awning.webp: https://web.facebook.com/photo.php?fbid=2634738073568083
+installation.webp: https://web.facebook.com/photo.php?fbid=2634737770234780
+steel-frame.webp: https://web.facebook.com/photo.php?fbid=2613078715734019
+metal-roof.webp: https://web.facebook.com/photo.php?fbid=2613078579067366
+
+The sliding-canvas service currently uses a clearly captioned team photo until a verified photo of that system is supplied. The old repository's slide-awning-demo.mp4 shows a folding-arm awning and must not be labeled as a sliding canopy.
+
+striped-awning.webp (closer view): https://web.facebook.com/photo.php?fbid=2634738010234756
+striped-awning-wide.webp retains the first source view.
+
+roof-home.webp: original project repository public/images/home.jpg (steel-framed translucent roof; no location claim).
+
+shop-steel-roof-ban-pong.webp: https://web.facebook.com/photo.php?fbid=2623644334677457
+Original downloaded file: 591137407_2623645314677359_3862513265448191933_n.jpg
+Verified source context: shop-front steel roof, Ban Pong, Ratchaburi.
+navy-striped-awning-suan-phueng.webp: https://web.facebook.com/photo/?fbid=2634737616901462
+Original downloaded file: 600281694_2634738223568068_7579515683363140276_n.jpg
+Verified source context: navy striped hood awning on white siding, Suan Phueng, Ratchaburi.
+striped-awning-entrance.webp: https://web.facebook.com/photo/?fbid=2634737656901458
+Original downloaded file: 597940689_2634738666901357_2739976506988367959_n.jpg
+Additional angle of the existing striped-awning-suan-phueng job, not a separate project.
+These three originals were encoded to WebP at source dimensions (quality 90), without cropping, generative edits, or object removal. The website uses CSS cropping for card previews; the gallery displays the complete image.
+
+brown-metal-roof-wide.webp: https://web.facebook.com/photo.php?fbid=870835135804063
+Original downloaded file: 613199856_870835139137396_322630048831888874_n.jpg
+brown-metal-roof-detail.webp: https://web.facebook.com/photo.php?fbid=870835182470725
+Original downloaded file: 613126985_870835185804058_5081121199505096763_n.jpg
+Both photographs belong to the same brown metal-sheet roof installation, verified from the official Facebook page 100086327531403 (January 12 post). No project location is asserted because the post supplies none.
+Encoded at original dimensions to WebP quality 90 without generative edits or scene changes.
+
+white-translucent-canopy-frame.webp: https://web.facebook.com/photo.php?fbid=870830392471204
+Original downloaded file: 612785985_870830399137870_3501986722921943395_n.jpg
+white-translucent-canopy-top.webp: https://web.facebook.com/photo.php?fbid=870830539137856
+Original downloaded file: 614702199_870830542471189_7350148124701334111_n.jpg
+Both photographs belong to the same white-frame translucent canopy beside a building, verified on official Facebook page 100086327531403 (January 12 post). No exact sheet material or location is asserted. A near-duplicate third angle was omitted.
+Encoded at original dimensions to WebP quality 90 without generative edits or scene changes.
+
+blue-gable-metal-roof-front.webp: https://web.facebook.com/photo.php?fbid=953667394187503
+Original downloaded file: 679554207_953667397520836_8341191071347610025_n.jpg
+blue-gable-metal-roof-angle.webp: https://web.facebook.com/photo.php?fbid=953667034187539
+Original downloaded file: 682681459_953667037520872_1293012573305963540_n.jpg
+blue-gable-metal-roof-installation.webp: https://web.facebook.com/photo.php?fbid=953666834187559
+Original downloaded file: 678989894_953666837520892_2048041611381891970_n.jpg
+Three photographs of the same blue gable metal-sheet roof installation, verified on official Facebook page 100086327531403 (April 25 post). No location is asserted. The blurred extra photograph was omitted. Originals encoded at original dimensions to WebP quality 90 without generative edits.
+
+white-porch-roof.webp: https://web.facebook.com/photo.php?fbid=1081602391394002
+Original downloaded file: 818563584_1081603464727228_4417932301314201773_n.jpg
+white-porch-roof-reverse.webp: https://web.facebook.com/photo.php?fbid=1081602284727346
+Original downloaded file: 820047810_1081603118060596_1999197053242055218_n.jpg
+Two directions of the same white-steel porch roof beside the orange house, verified on official Facebook page 100086327531403 (September 23 post). No location or exact roof-sheet/insulation material is asserted. Original dimensions preserved; WebP quality 90, no generative edits.
+
+green-house-front-canopy.webp: https://web.facebook.com/photo.php?fbid=870835092470734
+Original downloaded file: 615056134_870835095804067_5228032528323591918_n.jpg
+green-house-front-canopy-installation.webp: https://web.facebook.com/photo.php?fbid=870835465804030
+Original downloaded file: 613759493_870835469137363_5334466195964812873_n.jpg
+Completed night view and construction view verified as the same pale-green house with an arched white front door and small pool, from official Facebook page 100086327531403. No location is asserted. Both originals retained at original dimensions, WebP quality 90 without generative edits.
+
+steel-frame-in-progress-workers.webp: https://web.facebook.com/photo.php?fbid=1111075798446661
+Original downloaded file: 857370648_1111075801779994_7341187654965804481_n.jpg
+steel-frame-in-progress-upper.webp: https://web.facebook.com/photo.php?fbid=1111075718446669
+Original downloaded file: 858642338_1111075721780002_7208885285333263006_n.jpg
+Two photographs of the same steel frame under construction, verified on official Facebook page 100086327531403 (October 24 post). The frame has not yet been roofed; neither a completed installation nor a location is asserted. Both originals retained at original dimensions, WebP quality 90 without generative edits.
