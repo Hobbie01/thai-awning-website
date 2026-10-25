@@ -9,6 +9,13 @@ import {
 } from "@/components/site/sections";
 import { images } from "@/lib/site";
 import { pageMetadata } from "@/lib/seo";
+import { projects } from "@/lib/projects";
+
+const moreProjects = [
+  "navy-striped-awning-suan-phueng",
+  "shop-steel-roof-ban-pong",
+  "cream-retractable-awning",
+].flatMap((slug) => projects.filter((project) => project.slug === slug));
 export const metadata = pageMetadata(
   "ติดตั้งผ้าใบกันสาดและโครงหลังคา โดยช่างตู่",
   "บริการติดตั้งผ้าใบกันสาด ผ้าใบรางสไลด์ โครงเหล็กและหลังคา ดูภาพผลงานจริงและปรึกษารูปแบบที่เหมาะกับพื้นที่กับช่างตู่",
@@ -170,6 +177,46 @@ export default function Home() {
               </ButtonLink>
             </div>
           </article>
+          <div className="grid-three home-project-grid">
+            {moreProjects.map((project) => (
+              <article className="card" key={project.slug}>
+                <Link
+                  href={`/projects/${project.slug}`}
+                  aria-label={`ดูผลงาน ${project.title}`}
+                >
+                  <WorkPhoto
+                    src={project.images[0].src}
+                    alt={project.images[0].alt}
+                    position={
+                      project.slug === "navy-striped-awning-suan-phueng"
+                        ? "center 25%"
+                        : "center"
+                    }
+                  />
+                </Link>
+                <div className="card-body">
+                  <h3>
+                    <Link href={`/projects/${project.slug}`}>
+                      {project.title}
+                    </Link>
+                  </h3>
+                  <p>{project.description}</p>
+                  <Link
+                    className="text-link"
+                    href={`/projects/${project.slug}`}
+                  >
+                    ดูภาพและรายละเอียด <ArrowRight size={18} aria-hidden="true" />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="button-row home-project-more">
+            <ButtonLink href="/projects" variant="outline">
+              ดูผลงานทั้งหมด {projects.length} งาน{" "}
+              <ArrowRight size={18} aria-hidden="true" />
+            </ButtonLink>
+          </div>
         </div>
       </section>
       <section className="section process-section">
