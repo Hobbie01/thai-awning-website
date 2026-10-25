@@ -1,6 +1,6 @@
 "use client";
 
-import { WorkPhoto } from "@/components/site/sections";
+import ProjectCover from "@/components/project-cover";
 import type { Project } from "@/lib/projects";
 import { ArrowRight, Images, MapPin } from "lucide-react";
 import Link from "next/link";
@@ -45,15 +45,10 @@ export default function ProjectFilter({ projects }: { projects: Project[] }) {
               className="card inner-project-card portfolio-card"
               key={project.slug}
             >
-              <Link
+              <ProjectCover
+                project={project}
                 href={`/projects/${project.slug}`}
-                aria-label={`ดูผลงาน ${project.title}`}
-              >
-                <WorkPhoto
-                  src={project.images[0].src}
-                  alt={project.images[0].alt}
-                />
-              </Link>
+              />
               <div className="card-body">
                 <div className="portfolio-card-meta">
                   <span className="inner-tag">

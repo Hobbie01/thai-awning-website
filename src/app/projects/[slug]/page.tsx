@@ -1,11 +1,11 @@
 import ProjectGallery from "@/components/project-gallery";
+import ProjectCover from "@/components/project-cover";
 import {
   Breadcrumbs,
   ButtonLink,
   ContactCta,
-  WorkPhoto,
 } from "@/components/site/sections";
-import { getProject, projects } from "@/lib/projects";
+import { getProject, getProjectCover, projects } from "@/lib/projects";
 import { BreadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
@@ -34,7 +34,7 @@ export async function generateMetadata({
     project.title,
     project.description,
     `/projects/${project.slug}`,
-    project.images[0].src,
+    getProjectCover(project).src,
   );
 }
 export default async function ProjectPage({
@@ -75,11 +75,7 @@ export default async function ProjectPage({
               </span>
             ) : null}
           </div>
-          <WorkPhoto
-            src={project.images[0].src}
-            alt={project.images[0].alt}
-            priority
-          />
+          <ProjectCover project={project} priority />
         </header>
         <div className="container">
           <dl className="inner-facts portfolio-facts">
@@ -134,9 +130,9 @@ export default async function ProjectPage({
             </aside>
           </div>
         </section>
-        <section className="section section-soft">
+        <section id="original-photos" className="section section-soft">
           <div className="container">
-            <h2 className="section-heading">ภาพผลงานและรายละเอียดหน้างาน</h2>
+            <h2 className="section-heading">ภาพต้นฉบับจากหน้างาน</h2>
             <p className="section-lead portfolio-intro">
               กดที่ภาพเพื่อดูขนาดเต็ม ใช้ปุ่มลูกศรเพื่อดูภาพถัดไป และกด Esc เพื่อปิด
             </p>
@@ -150,13 +146,13 @@ export default async function ProjectPage({
               <div className="portfolio-related-grid">
                 {related.map((item) => (
                   <article key={item.slug}>
-                    <Link href={`/projects/${item.slug}`}>
-                      <WorkPhoto
-                        src={item.images[0].src}
-                        alt={item.images[0].alt}
-                      />
-                      <h3>{item.title}</h3>
-                    </Link>
+                    <ProjectCover
+                      project={item}
+                      href={`/projects/${item.slug}`}
+                    />
+                    <h3>
+                      <Link href={`/projects/${item.slug}`}>{item.title}</Link>
+                    </h3>
                     {item.location ? (
                       <p className="portfolio-location">
                         <MapPin size={16} aria-hidden="true" /> {item.location}

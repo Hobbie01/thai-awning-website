@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   location?: string;
   serviceSlug: "awning" | "slide-awning" | "steel-roof";
+  coverImage?: { src: string; alt: string };
   images: { src: string; alt: string; caption: string }[];
   sourceUrl?: string;
 };
@@ -194,4 +195,8 @@ export const projects: Project[] = [
 
 export function getProject(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);
+}
+
+export function getProjectCover(project: Project): { src: string; alt: string } {
+  return project.coverImage ?? project.images[0];
 }
