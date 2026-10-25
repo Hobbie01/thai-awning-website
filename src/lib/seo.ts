@@ -73,6 +73,33 @@ export function OrganizationJsonLd() {
     image: absoluteUrl(images.awning),
   });
 }
+export function LocalBusinessJsonLd() {
+  return jsonLd({
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": absoluteUrl("/#local-business"),
+    name: site.name,
+    url: absoluteUrl("/"),
+    telephone: "+66924127392",
+    parentOrganization: { "@id": absoluteUrl("/#organization") },
+    image: absoluteUrl(images.awning),
+    sameAs: [site.facebook, site.line],
+    hasMap: site.location.mapUrl,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: site.location.streetAddress,
+      addressLocality: site.location.district,
+      addressRegion: site.location.province,
+      postalCode: site.location.postalCode,
+      addressCountry: "TH",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: site.location.latitude,
+      longitude: site.location.longitude,
+    },
+  });
+}
 export function BreadcrumbJsonLd({
   items,
 }: { items: { label: string; href: string }[] }) {

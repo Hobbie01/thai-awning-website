@@ -4,6 +4,17 @@ export const site = {
   phoneHref: "tel:+66924127392",
   line: "https://line.me/ti/p/4S-iTBNXxF",
   facebook: "https://www.facebook.com/changtuphab",
+  location: {
+    address: "63 ตำบลดอนกระเบื้อง อำเภอบ้านโป่ง ราชบุรี 70110",
+    streetAddress: "63 ตำบลดอนกระเบื้อง",
+    district: "อำเภอบ้านโป่ง",
+    province: "ราชบุรี",
+    postalCode: "70110",
+    latitude: 13.7638941,
+    longitude: 99.9060657,
+    mapUrl: "https://maps.app.goo.gl/fFeFDjb3yCZ6AY5c8",
+    directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=13.7638941,99.9060657",
+  },
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://thai-awning-website.vercel.app",
 };
 export const images = {
