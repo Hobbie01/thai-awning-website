@@ -1,7 +1,8 @@
 "use client";
+
 import { WorkPhoto } from "@/components/site/sections";
-import { images } from "@/lib/site";
-import { ArrowRight } from "lucide-react";
+import type { Project } from "@/lib/projects";
+import { ArrowRight, Images, MapPin } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -11,40 +12,11 @@ const categories = [
   { id: "sliding", label: "ผ้าใบรางสไลด์" },
   { id: "roof", label: "โครงหลังคา" },
 ];
-const works = [
-  {
-    category: "awning",
-    title: "กันสาดผ้าใบลายทาง บ้านพักอาศัย สวนผึ้ง",
-    description:
-      "กันสาดลายเหลือง–ครีม บริเวณทางเข้าบ้านผนังหิน ดูรายละเอียดงานและภาพขณะติดตั้ง",
-    image: images.awning,
-    alt: "กันสาดผ้าใบลายทางที่บ้านพักอาศัย สวนผึ้ง",
-    href: "/projects/striped-awning-suan-phueng",
-    link: "ดูรายละเอียดผลงาน",
-  },
-  {
-    category: "roof",
-    title: "งานโครงเหล็ก",
-    description: "ภาพงานโครงเหล็กจากหน้างานจริงของช่างตู่",
-    image: images.steel,
-    alt: "โครงเหล็กจากงานจริงของช่างตู่",
-    href: "/services/steel-roof",
-    link: "ดูบริการโครงเหล็กและหลังคา",
-  },
-  {
-    category: "roof",
-    title: "งานหลังคาเมทัลชีท",
-    description: "ภาพหลังคาเมทัลชีทจากผลงานจริง ดูแนวทางเลือกวัสดุและเตรียมพื้นที่ก่อนติดตั้ง",
-    image: images.roof,
-    alt: "หลังคาเมทัลชีทจากงานติดตั้งจริง",
-    href: "/services/steel-roof",
-    link: "ดูบริการหลังคา",
-  },
-];
-export default function ProjectFilter() {
+
+export default function ProjectFilter({ projects }: { projects: Project[] }) {
   const [active, setActive] = useState("all");
-  const visible = works.filter(
-    (work) => active === "all" || work.category === active,
+  const visible = projects.filter(
+    (project) => active === "all" || project.category === active,
   );
   return (
     <div>
@@ -63,27 +35,53 @@ export default function ProjectFilter() {
       </fieldset>
       <output className="inner-filter-status" aria-live="polite">
         {visible.length
-          ? `แสดงภาพผลงาน ${visible.length} รายการ`
+          ? `แสดงผลงาน ${visible.length} งาน · ${visible.reduce((count, project) => count + project.images.length, 0)} ภาพ`
           : "ยังไม่มีภาพผลงานในหมวดนี้"}
       </output>
       {visible.length ? (
-        <div className="inner-project-grid">
-          {visible.map((work, index) => (
+        <div className="inner-project-grid portfolio-grid">
+          {visible.map((project) => (
             <article
-              className={`card inner-project-card ${index === 0 && active !== "roof" ? "inner-project-featured" : ""}`}
-              key={work.title}
+              className="card inner-project-card portfolio-card"
+              key={project.slug}
             >
-              <WorkPhoto src={work.image} alt={work.alt} />
+              <Link
+                href={`/projects/${project.slug}`}
+                aria-label={`ดูผลงาน ${project.title}`}
+              >
+                <WorkPhoto
+                  src={project.images[0].src}
+                  alt={project.images[0].alt}
+                />
+              </Link>
               <div className="card-body">
-                <span className="inner-tag">
-                  {work.category === "awning"
-                    ? "ผ้าใบกันสาด"
-                    : "โครงเหล็กและหลังคา"}
-                </span>
-                <h2>{work.title}</h2>
-                <p>{work.description}</p>
-                <Link className="text-link" href={work.href}>
-                  {work.link} <ArrowRight size={18} aria-hidden="true" />
+                <div className="portfolio-card-meta">
+                  <span className="inner-tag">
+                    {
+                      categories.find(
+                        (category) => category.id === project.category,
+                      )?.label
+                    }
+                  </span>
+                  <span>
+                    <Images size={15} aria-hidden="true" />{" "}
+                    {project.images.length} ภาพ
+                  </span>
+                </div>
+                <h2>
+                  <Link href={`/projects/${project.slug}`}>
+                    {project.title}
+                  </Link>
+                </h2>
+                {project.location ? (
+                  <p className="portfolio-location">
+                    <MapPin size={16} aria-hidden="true" /> {project.location}
+                  </p>
+                ) : null}
+                <p>{project.description}</p>
+                <Link className="text-link" href={`/projects/${project.slug}`}>
+                  ดูรายละเอียดและภาพทั้งหมด{" "}
+                  <ArrowRight size={18} aria-hidden="true" />
                 </Link>
               </div>
             </article>
@@ -91,7 +89,6 @@ export default function ProjectFilter() {
         </div>
       ) : (
         <div className="inner-empty">
-          <span className="eyebrow">ผ้าใบรางสไลด์</span>
           <h2>ดูแนวทางเลือกผ้าใบรางสไลด์</h2>
           <p>
             กำลังรวบรวมภาพผลงานหมวดนี้

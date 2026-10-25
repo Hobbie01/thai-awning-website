@@ -5,13 +5,14 @@ import {
   PageHero,
   WorkPhoto,
 } from "@/components/site/sections";
+import { projects } from "@/lib/projects";
 import { BreadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import { images, site } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
 import "../inner-pages.css";
 export const metadata = pageMetadata(
   "ผลงานติดตั้งผ้าใบกันสาดและหลังคา",
-  "ชมภาพผลงานจริงของช่างตู่ ทั้งกันสาดผ้าใบ งานโครงเหล็ก และหลังคา พร้อมรายละเอียดงานบ้านพักอาศัย สวนผึ้ง ราชบุรี",
+  "รวมภาพผลงานจริงของช่างตู่ ทั้งผ้าใบกันสาด โครงเหล็ก และหลังคา เลือกดูตามประเภทงาน พร้อมภาพหลายมุม รายละเอียดแต่ละหน้างาน และภาพต้นฉบับบน Facebook",
   "/projects",
   images.awning,
 );
@@ -33,7 +34,16 @@ export default function ProjectsPage() {
       />
       <section className="section">
         <div className="container">
-          <ProjectFilter />
+          <h2 className="section-heading">เลือกดูผลงานจากหน้างานจริง</h2>
+          <p className="section-lead portfolio-intro">
+            รวม {projects.length} งาน ·{" "}
+            {projects.reduce(
+              (count, project) => count + project.images.length,
+              0,
+            )}{" "}
+            ภาพ เลือกประเภทงาน แล้วเปิดดูภาพและรายละเอียดของแต่ละหน้างานได้
+          </p>
+          <ProjectFilter projects={projects} />
         </div>
       </section>
       <section className="section section-soft">

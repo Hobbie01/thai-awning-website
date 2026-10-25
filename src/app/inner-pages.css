@@ -3,3 +3,39 @@
 @media(max-width:640px){.inner-feature{padding:24px}.inner-four-grid,.inner-comparison,.inner-photo-pair,.inner-project-grid,.inner-case-split,.inner-case-gallery,.inner-contact-prep{grid-template-columns:1fr}.inner-four-grid{gap:24px}.inner-consideration{padding:0}.inner-filter{gap:8px}.inner-filter button{padding:10px 14px;font-size:.9rem}.inner-project-featured{grid-column:auto}.inner-empty{padding:28px}.inner-case-header{padding-top:20px}.inner-case-header>.photo-frame{aspect-ratio:1.2}.inner-facts{gap:18px;padding:22px;grid-template-columns:1fr}.inner-facts>div+div{padding:16px 0 0;border-left:0;border-top:1px solid #cdd1d3}.inner-case-gallery figure+figure .photo-frame{aspect-ratio:1.4;height:auto}.inner-preparation li{gap:12px;padding:20px}.inner-preparation li>svg{display:none}.inner-photo-banner{min-height:480px;padding:40px 0}.inner-photo-banner::after{background:linear-gradient(0deg,rgba(10,29,44,.93),rgba(10,29,44,.25))}.inner-contact-card{padding:24px}.inner-project-card h2{font-size:1.3rem}.inner-steps{gap:22px}}
 .split>.faq-section{padding:0;min-width:0}.split>.faq-section>.container,.section>.container>.faq-section>.container{width:100%;max-width:none;padding:0}.section>.container>.faq-section{padding:0}.inner-case-split .section-heading{margin-top:0}.inner-case-gallery figure+figure .photo-frame{height:auto;max-height:none}.inner-feature .inner-number{margin-bottom:0}
 fieldset.inner-filter{border:0;padding:0;margin:0;min-width:0}output.inner-filter-status{display:block}
+/* Portfolio: consistent real-work cards and full-size photo viewer. */
+.portfolio-intro{max-width:760px;margin-bottom:28px}
+.inner-project-grid.portfolio-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.portfolio-card{display:flex;flex-direction:column;min-width:0}
+.portfolio-card>.card-body{display:flex;flex-direction:column;flex:1;padding:24px}
+.portfolio-card .photo-frame{aspect-ratio:4/3}
+.portfolio-card .text-link{margin-top:auto;font-size:.95rem}
+.portfolio-card h2{font-size:1.25rem;margin:14px 0 10px}
+.portfolio-card-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.portfolio-card-meta>span:last-child{display:flex;align-items:center;gap:6px;font-size:.8rem;color:#566476}
+.portfolio-location{display:flex;align-items:center;gap:7px;color:#42566a;font-size:.9rem;line-height:1.6}
+.inner-project-card .portfolio-location{margin:0 0 12px}
+.portfolio-location svg{flex-shrink:0}
+.portfolio-facts{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.portfolio-photo-grid,.portfolio-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.portfolio-photo-grid figure{margin:0;min-width:0}
+.portfolio-photo-grid figcaption{font-size:.9rem;line-height:1.7;color:#566476;margin-top:12px}
+.portfolio-photo-button{display:block;width:100%;position:relative;padding:0;border:0;border-radius:10px;background:#e8e5dc;cursor:zoom-in;overflow:hidden}
+.portfolio-photo-button .photo-frame{aspect-ratio:4/3}
+.portfolio-expand{position:absolute;right:12px;bottom:12px;display:flex;align-items:center;gap:7px;padding:9px 12px;background:#132d46;color:white;border-radius:6px;font-size:.85rem}
+.portfolio-photo-button:focus-visible,.portfolio-lightbox button:focus-visible{outline:3px solid #f7c64a;outline-offset:4px}
+.portfolio-photo-button:hover .portfolio-expand{background:#234c6f}
+.portfolio-lightbox{border:0;border-radius:12px;padding:16px;background:#102336;color:#fff;width:min(1200px,95vw);max-height:94dvh;max-width:95vw}
+.portfolio-lightbox::backdrop{background:rgba(5,15,25,.9)}
+.portfolio-lightbox-top,.portfolio-lightbox-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.portfolio-lightbox-top{padding-bottom:12px}
+.portfolio-lightbox button{display:flex;align-items:center;justify-content:center;flex-shrink:0;min-width:44px;min-height:44px;border:1px solid #70859b;border-radius:6px;background:#1a3853;color:#fff;cursor:pointer}
+.portfolio-lightbox button:hover{background:#315a7d}
+.portfolio-lightbox-image{position:relative;height:min(65dvh,760px)}
+.portfolio-lightbox-bottom{padding-top:16px}
+.portfolio-lightbox-bottom p{flex:1;text-align:center;line-height:1.7;font-size:.95rem}
+.portfolio-related-grid{margin-top:28px}
+.portfolio-related-grid .photo-frame{aspect-ratio:4/3}
+.portfolio-related-grid h3{font-size:1.15rem;line-height:1.6;margin:16px 0 10px}
+@media(max-width:1000px){.inner-project-grid.portfolio-grid,.portfolio-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.inner-project-grid.portfolio-grid,.portfolio-photo-grid,.portfolio-related-grid{grid-template-columns:1fr}.portfolio-facts{grid-template-columns:1fr}.portfolio-lightbox{padding:12px}.portfolio-lightbox-image{height:57dvh}.portfolio-lightbox-bottom{gap:8px}.portfolio-lightbox-bottom p{font-size:.85rem}.portfolio-lightbox-top{font-size:.9rem}}

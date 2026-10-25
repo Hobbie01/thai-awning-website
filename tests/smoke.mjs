@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
+import { projects } from "../src/lib/projects.ts";
 
 const base = process.env.SMOKE_BASE_URL || "http://localhost:3000";
 const canonicalBase = (process.env.NEXT_PUBLIC_SITE_URL || "https://thai-awning-website.vercel.app").replace(/\/$/, "");
-const routes = ["/", "/services/awning", "/services/slide-awning", "/services/steel-roof", "/projects", "/projects/striped-awning-suan-phueng", "/about", "/contact"];
+const routes = ["/", "/services/awning", "/services/slide-awning", "/services/steel-roof", "/projects", ...projects.map((project) => `/projects/${project.slug}`), "/about", "/contact"];
 const failures = [];
 const titles = new Set();
 async function check(label, fn) {
@@ -34,7 +35,7 @@ for (const route of routes) {
     assert.match(body, /\/_next\/image\?/);
   });
 }
-await check("sitemap includes exactly eight public routes", async () => {
+await check("sitemap includes every public route and project", async () => {
   const { response, body } = await read("/sitemap.xml"); assert.equal(response.status, 200);
   const locations = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   assert.deepEqual(locations.sort(), routes.map((route) => `${canonicalBase}${route === "/" ? "/" : route}`).sort());
