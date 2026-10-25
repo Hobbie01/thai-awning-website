@@ -217,7 +217,7 @@ export const projects: Project[] = [
       {
         "src": "/images/work/blue-gable-metal-roof-front.webp",
         "alt": "ภาพด้านหน้าหลังคาทรงจั่วเมทัลชีทสีน้ำเงินบริเวณหน้าอาคาร",
-        "caption": "ภาพต้นฉบับด้านหน้าเห็นรูปทรงจั่วและแนวหลังคา"
+        "caption": "ภาพด้านหน้าเห็นรูปทรงจั่วและแนวหลังคา"
       },
       {
         "src": "/images/work/blue-gable-metal-roof-angle.webp",
@@ -247,7 +247,7 @@ export const projects: Project[] = [
       {
         "src": "/images/work/white-porch-roof.webp",
         "alt": "แนวหลังคาระเบียงโครงเหล็กสีขาวข้างบ้านผนังสีส้ม",
-        "caption": "ภาพต้นฉบับมองตามแนวโครงหลังคาและระเบียง"
+        "caption": "ภาพมองตามแนวโครงหลังคาและระเบียง"
       },
       {
         "src": "/images/work/white-porch-roof-reverse.webp",
@@ -271,7 +271,7 @@ export const projects: Project[] = [
       {
         "src": "/images/work/green-house-front-canopy.webp",
         "alt": "ภาพกลางคืนของหลังคาโครงสีเข้มหน้าบ้านโทนเขียวพร้อมประตูโค้งสีขาว",
-        "caption": "ภาพต้นฉบับหลังติดตั้งถ่ายในช่วงกลางคืน"
+        "caption": "ภาพหลังติดตั้งถ่ายในช่วงกลางคืน"
       },
       {
         "src": "/images/work/green-house-front-canopy-installation.webp",
@@ -295,7 +295,7 @@ export const projects: Project[] = [
       {
         "src": "/images/work/steel-frame-in-progress-workers.webp",
         "alt": "ทีมช่างและบันไดระหว่างขึ้นโครงเหล็กก่อนมุงหลังคา",
-        "caption": "ภาพต้นฉบับทีมช่างระหว่างดำเนินงาน"
+        "caption": "ภาพทีมช่างระหว่างดำเนินงาน"
       },
       {
         "src": "/images/work/steel-frame-in-progress-upper.webp",
